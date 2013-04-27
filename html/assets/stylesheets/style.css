@@ -14,6 +14,13 @@
         $Support classes
         $Print
 ----------------------------------- */
+.transition-none {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
 .inner {
   height: 0;
   margin: 0;
@@ -506,6 +513,7 @@ img {
 
 body {
   background: black;
+  height: 100%;
 }
 .menu {
   list-style: none;
@@ -1293,12 +1301,44 @@ aside.destaques:after {
 .general-list .filters {
   width: 100%;
 }
+.general-list .filters header h2 {
+  color: #848484;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding: ;
+}
 .general-list .filters > div {
   color: #c5c5c5;
   display: table-cell;
   float: right;
   font-size: 11px;
   margin: 0 20px;
+}
+.general-list .filters .close-me {
+  float: right;
+}
+.general-list .filters .close-me b {
+  float: left;
+}
+.general-list .filters .close-me a:hover {
+  color: #d91d1d;
+}
+.general-list .filters .close-me a:hover i {
+  background-position: left bottom;
+}
+.general-list .filters .close-me .icon-pointer {
+  background: url("../images/icon-pointer.png") no-repeat 0 0;
+  display: block;
+  float: left;
+  height: 15px;
+  margin: 0 5px;
+  text-indent: -999em;
+  width: 15px;
+}
+.general-list .filters .close-me .icon-pointer.on,
+.general-list .filters .close-me .icon-pointer:hover {
+  background-position: left bottom;
 }
 .general-list .filters .size-img b {
   float: left;
@@ -1380,10 +1420,6 @@ aside.destaques:after {
   margin: 1.4%;
   width: 30%;
 }
-.general-list .models-list.big li {
-  margin: 1%;
-  width: 48%;
-}
 .general-list .models-list .data {
   background: #0d0d0d;
   border-radius: 6px 6px 6px 6px;
@@ -1401,6 +1437,7 @@ aside.destaques:after {
   padding: 15px;
 }
 .general-list .models-list .data h3 b {
+  color: #848484;
   display: block;
   margin-bottom: 9px;
 }
@@ -1429,6 +1466,36 @@ aside.destaques:after {
 .general-list .models-list .data .infos address {
   margin: 0 3px;
   width: 22px;
+}
+.general-list .models-list.big li {
+  margin: 1%;
+  width: 48%;
+}
+.general-list .models-list.list li {
+  overflow: hidden;
+  width: 45%;
+}
+.general-list .models-list.list li .data {
+  overflow: hidden;
+}
+.general-list .models-list.list li .data h3 {
+  float: left;
+  width: 40%;
+}
+.general-list .models-list.list li .data h3 + div {
+  color: #e5e0db;
+  float: left;
+  margin: 50px 0;
+  width: 50%;
+}
+.general-list .models-list.list li .data .excerpt {
+  float: left;
+  font-size: 80%;
+  height: auto;
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=@ie)';
+  width: auto;
 }
 .general-list .banner {
   clear: both;
@@ -1528,6 +1595,36 @@ footer:after {
 }
 footer {
   *zoom: 1;
+}
+/* -----------------------------------
+        $maps
+----------------------------------- */
+
+#mapbox {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+#mapbox.on {
+  background: rgba(255, 255, 255, 0.5);
+  display: block !important;
+}
+#mapbox .close {
+  background: #666666;
+  color: white;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+}
+#mapbox #map_canvas {
+  margin: 1.5% 0 0 2%;
+  height: 95%;
+  width: 95%;
 }
 /* -----------------------------------
         $Plugins (minify!)
@@ -1830,6 +1927,13 @@ footer {
 #fancybox-buttons a.btnDisabled {
   opacity: .4;
   cursor: default;
+}
+.fancybox-wrap * {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 /* =============================================================================
      Media Queries ($Responsive)
@@ -2135,7 +2239,4 @@ footer {
   h3 {
     page-break-after: avoid;
   }
-}
-* img {
-  opacity: 0.03;
 }

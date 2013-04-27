@@ -343,9 +343,16 @@
                 </aside>
 
                 <article class="general-list right c85">
-                    <h2 class="hide">Acompanhantes</h2>
 
                     <div class="filters">
+                        <header class="left">
+                            <h2>Acompanhantes de São Paulo</h2>    
+                        </header>
+
+                        <div class="close-me">
+                            <a href="#map_canvas" title="" class="gps"><b>Meu local</b> <i class="icon icon-pointer"></i></a>
+                        </div>
+
                         <div class="size-img">
                             <b>Zoom</b>
                             <a href="#" class="icon zoom-medium on" title="Média">Média</a>
@@ -763,11 +770,18 @@
             © Copyright 2013 - Red Class Acompanhantes. Todos os direitos reservados
         </article>
     </footer>
+
+</div>
+<div id="mapbox">
+    <a href="#" class="close" title="Fechar Mapa">X</a>
+    <div id="map_canvas"></div>
 </div>
 
 <!-- Scripts (jQuery IE:1.9.1; Others:2.0) -->
 <script id="load_jquery" src="assets/javascripts/load-jquery.js?v=1.0.0"></script>
 <script src="assets/javascripts/plugins.js?v=2.0.0"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBSTSWIUHT8M75ZOzYH8772uEs8rxiZKYw&sensor=true">
+    </script>
 <script src="assets/javascripts/script.js?v=1.0.0"></script>
 <!---->
 </body>
