@@ -2240,3 +2240,6 @@ footer {
     page-break-after: avoid;
   }
 }
+* img {
+  opacity: 0.03;
+}
