@@ -1,6 +1,7 @@
 /* ===== Primary Styles ========================================================
      Author: Alexander Pina
 ========================================================================== */
+
 /* -----------------------------------
         $Index
 
@@ -14,6 +15,25 @@
         $Support classes
         $Print
 ----------------------------------- */
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGHiec-hVyr2k4iOzEQsW1iE.woff) format('woff');
+}
 .transition-none {
   -webkit-transition: none;
   -moz-transition: none;
@@ -115,7 +135,8 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
   color: #222222;
 }
 button:focus,
@@ -391,8 +412,8 @@ img {
   margin-right: auto;
 }
 .wfull {
-  max-width: 100%
-        width:100%;
+  max-width: 100%;
+  width: 100%;
 }
 .w320 {
   max-width: 320px;
@@ -806,6 +827,10 @@ body {
   width: 11px;
 }
 /* -----------------------------------
+        $form
+----------------------------------- */
+
+/* -----------------------------------
         $Banner
 ----------------------------------- */
 
@@ -1020,13 +1045,13 @@ body {
   -o-border-radius: 5px 5px 5px 5px;
   float: right;
   margin-top: 20px;
-  padding: 8px 14px;
+  padding: 10px 14px;
 }
 #news legend {
   color: white;
   font-size: 100%;
   line-height: 110%;
-  margin: 2px 0;
+  margin: 6px 0;
   overflow: hidden;
 }
 #news legend b {
@@ -1264,7 +1289,8 @@ aside.destaques:after {
   width: 100%;
 }
 .features-list .data h3 a b {
-  font: normal 13px 'Exo';
+  font: normal 13px 'Source Sans Pro', sans-serif;
+  font-weight: 700;
 }
 .features-list .data h3 a img {
   border: 1px solid #666666;
@@ -1582,8 +1608,41 @@ footer article {
 }
 footer article h4 {
   color: #4e4e4e;
-  font: normal 20px 'Exo';
+  font: normal 20px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
+}
+footer input,
+footer textarea {
+  background: #141414;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+  border: none;
+  border-bottom: 1px solid #141414;
+  color: white;
+  font: normal 95% 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  padding: 3px 6px;
+}
+footer input:valid,
+footer textarea:valid {
+  background: #141414;
+  color: white;
+}
+footer input:invalid,
+footer textarea:invalid {
+  background: #141414;
+  border-bottom-color: red;
+}
+footer input[type="submit"] {
+  background: #2d2c2b;
+  color: white;
+}
+footer input[type="submit"]:focus {
+  background: red;
 }
 footer:before,
 footer:after {
@@ -1595,6 +1654,14 @@ footer:after {
 }
 footer {
   *zoom: 1;
+}
+.rights {
+  clear: both;
+  color: #999999;
+  display: block;
+  font-size: 12px;
+  margin: 15px 0;
+  text-align: center;
 }
 /* -----------------------------------
         $maps
@@ -1625,6 +1692,112 @@ footer {
   margin: 1.5% 0 0 2%;
   height: 95%;
   width: 95%;
+}
+/* -----------------------------------
+        $profile
+----------------------------------- */
+
+#profile-top {
+  height: 120%;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+#profile-top .cover-photo {
+  max-width: 1200px;
+  width: 100%;
+}
+#profile-top header {
+  bottom: 0;
+  margin: 0 0 0 3%;
+  padding-left: 190px;
+  position: absolute;
+  width: 96%;
+  z-index: 9;
+}
+#profile-top header h1 {
+  color: white;
+  font: normal 28px 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  margin: 0 0 10px 70px;
+}
+#profile-top header .photo-profile {
+  border: 4px solid white;
+  bottom: -18%;
+  box-shadow: 0 2px 10px black;
+  -webkit-box-shadow: 0 2px 10px black;
+  -moz-box-shadow: 0 2px 10px black;
+  -ms-box-shadow: 0 2px 10px black;
+  -o-box-shadow: 0 2px 10px black;
+  left: 0;
+  position: absolute;
+  z-index: 20;
+}
+#profile-top header nav {
+  list-style: none;
+  background: #e42727;
+  margin-left: 2%;
+  overflow: hidden;
+  padding: 3px 20px 3px 0;
+  width: 90%;
+}
+#profile-top header nav li {
+  float: left;
+  margin-left: 3%;
+}
+#profile-top header nav li {
+  font: normal 15px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+#profile-top header nav li a {
+  color: white;
+  display: block;
+  padding: 10px 20px;
+}
+#profile-top header nav li a:hover {
+  background: #fb2b2b;
+}
+#profile-top menu {
+  bottom: 80px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  width: 350px;
+}
+#profile-top menu ol {
+  list-style: none;
+}
+#profile-top menu ol li {
+  float: left;
+  margin-left: 3%;
+}
+#profile-top menu ol li a {
+  color: white;
+  display: block;
+  font: normal 12px 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.icon-phone {
+  background: url("../images/icon-phone.png") no-repeat 0 0;
+  display: block;
+  float: right;
+  height: 27px;
+  width: 18px;
+}
+.icon-message {
+  background: url("../images/icon-message.png") no-repeat 0 0;
+  display: block;
+  float: right;
+  height: 24px;
+  width: 21px;
+}
+#profile-data {
+  position: relative;
+  max-width: 1012px;
+  margin: 0 auto;
+  width: 100%;
 }
 /* -----------------------------------
         $Plugins (minify!)
@@ -2036,6 +2209,12 @@ footer {
     padding: 0;
     visibility: hidden;
     width: 0;
+  }
+  #profile-top header nav li {
+    margin-left: 1.5%;
+  }
+  #profile-top header nav li a {
+    padding: 10px 10px;
   }
 }
 /* =Media query for iPad and tablets
