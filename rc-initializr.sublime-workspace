@@ -1,0 +1,521 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ita",
+				"italic"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"dk_",
+				"dk_container"
+			],
+			[
+				"se",
+				"sessionStorage"
+			],
+			[
+				"lis",
+				"list_container"
+			],
+			[
+				"box",
+				"box-gray"
+			],
+			[
+				"Rese",
+				"ResetHeight"
+			],
+			[
+				"is",
+				"isPropagationStopped"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"fnc",
+				"function"
+			],
+			[
+				"sta",
+				"statusHTML"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"spot",
+				"spotlight"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"tran",
+				"transition	CSS - transition: ;"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "initializr/assets/js/main.js",
+			"settings":
+			{
+				"buffer_size": 106,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "initializr/assets/js/libs/red-class.js",
+			"settings":
+			{
+				"buffer_size": 465,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/LESS-build/LESS.sublime-build",
+	"command_palette":
+	{
+		"height": 60.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 386.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/github/rc/initializr/assets/css/main.less",
+		"/E/github/rc/initializr/index.html",
+		"/E/github/initialzr.sublime-workspace",
+		"/E/github/initialzr.sublime-project",
+		"/E/github/rc/initializr/assets/js/main.js",
+		"/E/github/rc/initializr/assets/js/plugins.js",
+		"/E/github/rc/initializr/_.htaccess",
+		"/E/initializr/assets/js/plugins.js",
+		"/C/wamp/www/click/fiat/idea-2014/trunk/web/css/exterior.css",
+		"/C/wamp/www/click/fiat/idea-2014/trunk/web/exterior.html",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/meta-boxes.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/submit.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/class-contact-forms-list-table.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/admin-functions.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/admin.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/edit-contact-form.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/wp-contact-form-7.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/settings.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/capabilities.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/controller.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/classes.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/deprecated.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/formatting.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/functions.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/pipe.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/shortcodes.php",
+		"/C/wamp/www/click/fiat/idea-2014/trunk/web/adventure-locker.html",
+		"/C/wamp/www/click/fiat/idea-2014/trunk/web/js/main.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/main 2.css",
+		"/C/apache-tomcat-6.0.20/conf/Catalina/localhost/host-manager.xml",
+		"/C/apache-tomcat-6.0.20/conf/Catalina/localhost/ROOT.xml",
+		"/C/apache-tomcat-6.0.20/conf/server.xml",
+		"/C/wamp/www/click/fiat/idea-2014/trunk/web/index.html",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/page.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/header.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/footer.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/category.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/search.php",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/single.php",
+		"/C/wamp/www/lexa/initializr/assets/js/main.js",
+		"/C/wamp/www/lexa/initializr/index.html",
+		"/C/wamp/www/lexa/initializr/.htaccess",
+		"/C/wamp/www/lexa/2013/initializr/assets/js/main.js",
+		"/C/wamp/www/lexa/initializr/assets/js/plugins.js",
+		"/C/wamp/www/lexa/2013/initializr/.htaccess",
+		"/C/wamp/www/lexa/initializr/assets/js/app.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/is-mobile.js",
+		"/C/wamp/www/lexa/initializr/assets/js/placeholder.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/main.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/mapa.js",
+		"/C/wamp/www/lexa/2013/initializr/assets/js/plugins.js",
+		"/C/wamp/www/lexa/2013/initializr/index.html",
+		"/C/wamp/www/lexa/2013/initializr/crossdomain.xml",
+		"/C/wamp/www/lexa/2013/geracao/geracao-2012/public_html/wp-config.php",
+		"/C/wamp/www/lexa/2013/geracao/geracao-2012/geracaoc_geracaocapoeira.sql",
+		"/C/wamp/www/lexa/2013/geracao/geracao-2012/public_html/.htaccess",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/style.css",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/cadastro1.jsp",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/main.jsp",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/acaosocial.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/classificacao.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/fotos.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/inscritos.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/login.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/misc.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/params.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/perguntas-frequentes.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/plugins.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/require-jquery.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/script.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/send.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/servico.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/servicos.json",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/share.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/social.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/videos.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/main.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/is-mobile.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/mapa.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/script.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/plugins.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/inst.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/main 2.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/model.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/normalize.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/years.js",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/view.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/views/fale-com-o-rally/main.jsp",
+		"/C/wamp/www/click/fiat/rally/mobile/web/css/style.css",
+		"/C/wamp/www/click/fiat/rally/mobile/web/css/general.css",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/menu/model.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/js/menu/main.js",
+		"/C/wamp/www/click/fiat/rally/mobile/web/views/home/etapa_futura.jsp",
+		"/C/wamp/www/click/fiat/rally/mobile/web/views/home/etapa_encerrada.jsp",
+		"/C/wamp/www/click/fiat/rally/mobile/web/views/home/etapa_andamento.jsp",
+		"/C/wamp/www/click/fiat/rally/mobile/web/inc/common/header-fiat.jsp",
+		"/C/wamp/www/click/fiat/rally/mobile/web/inc/common/head.jsp",
+		"/C/wamp/www/click/fiat/rally/mobile/web/inc/common/footer.jsp",
+		"/C/wamp/bin/apache/apache2.2.22/conf/extra/httpd-vhosts.conf",
+		"/C/wamp/bin/apache/apache2.2.22/conf/httpd.conf",
+		"/C/apache-tomcat-6.0.20/logs/localhost.2013-06-19.log",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/apache-tomcat-6.0.20/logs/catalina.2013-06-19.log",
+		"/C/apache-tomcat-6.0.20/conf/Catalina/localhost/manager.xml",
+		"/C/apache-tomcat-6.0.20/webapps/ROOT/WEB-INF/web.xml",
+		"/C/apache-tomcat-6.0.20/conf/web.xml",
+		"/C/apache-tomcat-6.0.20/conf/context.xml",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/js/plugins.js",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/index-alex.html",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/js/main-alex.js",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/css/bootstrap.css",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/internal-alex.html",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/404.html",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/css/main-alex.css",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/js/vendor/twitter-json.js",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/internal1-alex.html",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/css/grid.css",
+		"/C/Users/Alex/AppData/Local/Temp/fz3temp-1/menus.css",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/email-mkt/index.html",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/css/main.css",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/index.html",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/js/main.js",
+		"/C/wamp/www/helps/jquery-smartresize-master/demo/index.html",
+		"/C/wamp/www/helps/jquery-smartresize-master/jquery.debouncedresize.js",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/email-mkt.html",
+		"/C/wamp/www/lexa/gc/wp/wp-content/themes/gc/assets/js/main.js",
+		"/C/wamp/www/media-interactive/teleperformance/trunk/html/js/vendor/twitter-json",
+		"/C/wamp/www/lexa/gc/wp/wp-content/themes/gc/assets/js/twitter-json.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"container borda",
+			"dolorem",
+			".text",
+			"text",
+			"!window[\"WPAC\"]",
+			"main",
+			"exterior-design-esportividade",
+			"exterior",
+			"http://www.geracaocapoeira.com.br",
+			"http://www.gercaocapoeira.com.br",
+			"oldie",
+			"ondie",
+			".ddd",
+			"ddd_\"",
+			"class=\"ddd\"",
+			"ddd",
+			"input[type",
+			".ddd",
+			"ie8",
+			"alert();",
+			"alert",
+			"closeDrop",
+			"dk",
+			".menu-prova a",
+			"@media",
+			"media",
+			"menu-prova",
+			"barra-menu",
+			"media",
+			"isMobile",
+			"\\",
+			"localStorage",
+			"sessionStorage",
+			"ol",
+			"                            \n",
+			"alex",
+			"a",
+			"                            <",
+			"dl",
+			"td",
+			".facebook",
+			"facebook",
+			".facebook",
+			"facebook",
+			"\n@",
+			"h3",
+			"<a href=\"#\" class=\"pager\">",
+			"class=\"cycle-prev\"",
+			"4",
+			"45%",
+			"top-title",
+			"30%",
+			"linear",
+			".txt",
+			"cycle-slideshow",
+			"banner",
+			"transition",
+			"#star",
+			"#start",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://localhost/lexa/2013/geracao/geracao-2012/public_html",
+			"short\"",
+			"class=\"short\"",
+			"/",
+			"sessionStorage",
+			"localStorage"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "initializr/assets/js/main.js",
+					"settings":
+					{
+						"buffer_size": 106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "initializr/assets/js/libs/red-class.js",
+					"settings":
+					{
+						"buffer_size": 465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								271
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true
+}
