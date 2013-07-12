@@ -1,0 +1,12 @@
+================== Plugins Disponíveis ==================
+
+/*=======================================================
+	1- Easing
+	2- Mousewheel
+	3- CarouFredSel
+	4- NiceScroll
+	5- Selectivizr
+	6- FancyBox
+	7- Stupid Table Sorter + main.js
+	8- PIE
+=======================================================*/
