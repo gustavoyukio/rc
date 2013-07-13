@@ -339,12 +339,16 @@ body {
     padding-top:68px;
 }
 
-section > article {
-    margin-bottom:20px;
-    margin-top:20px;
+dl dt {
+    position: relative;
 }
 
 #main  {
+    > section > article {
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+
     aside {
         width: 260px
     }
@@ -353,6 +357,11 @@ section > article {
 /* ----------------------
    #icons
 ---------------------- */
+input[type="submit"].sprite {
+    content: "";
+    text-indent: -9999em;
+}
+
 .sprite { background: url("../img/sprite-icons.png") no-repeat 0 0 }
 .sprite .icon-fav{ background-position: 0 0; width: 16px; height: 14px; } 
 .sprite .icon-login{ background-position: 0 -64px; width: 10px; height: 15px; } 
@@ -362,12 +371,16 @@ section > article {
 .sprite .icon-phone{ background-position: 0 -342px; width: 17px; height: 25px; } 
 .sprite .icon-phone{ background-position: 0 -417px; width: 17px; height: 25px; } 
 .sprite .icon-pointer{ background-position: 0 -492px; width: 15px; height: 30px; } 
-.sprite .icon-search-on{ background-position: 0 -572px; width: 13px; height: 13px; } 
-.sprite .icon-search{ background-position: 0 -635px; width: 13px; height: 13px; } 
+.sprite .icon-search,
+input[type="submit"].icon-search { background-position: 0 -635px; width: 13px; height: 13px; } 
+.sprite .icon-search:hover,
+input[type="submit"].icon-search:hover,
+input[type="submit"].icon-search:focus { background-position: 0 -572px; width: 13px; height: 13px; } 
 .sprite .icon-star{ background-position: 0 -698px; width: 17px; height: 13px; } 
 .sprite .ribbon-nav-feature{ background-position: 0 -761px; width: 210px; height: 33px; } 
 .sprite .ribbon-vip-girl{ background-position: 0 -844px; width: 104px; height: 104px; } 
-.sprite .icon-preview{ background-position: 0 -998px; width: 45px; height: 45px; } 
+.sprite .icon-preview{ background-position: 0 -998px; width: 45px; height: 45px; }
+
 
 /* ----------------------
    #form
@@ -380,7 +393,7 @@ input[type="search"] {
     border-bottom:1px solid #424242;
 
     &:focus {
-        border-bottom-color: #5e5e5e;
+        border-bottom-color: #b8b8b8;
     }
 }
 
@@ -406,7 +419,12 @@ textarea {
     position: fixed;
     top:0;
     width: 100%;
-    z-index: 50
+    z-index: 50;
+
+    .wrap {
+        margin: 0 auto;
+        height: 81px;
+    }
 }
 
 #logo {
@@ -442,7 +460,7 @@ textarea {
     li {
         margin-left:auto;
 
-        a {
+        > a {
             display: block;
             padding:30px 20px;
         }
@@ -505,9 +523,34 @@ textarea {
             }
         }
 
+        > a:focus {
+            background: #e42727; /* Old browsers */
+            /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2U0MjcyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjMDE3MjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top,  #e42727 1%, #c01722 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e42727), color-stop(100%,#c01722)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #e42727 1%,#c01722 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #e42727 1%,#c01722 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #e42727 1%,#c01722 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #e42727 1%,#c01722 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42727', endColorstr='#c01722',GradientType=0 ); /* IE6-8 */
+            color: @hover;
+            text-shadow: 1px 1px 17px #f64747, 1px 1px 20px #f64747, 1px 1px 22px #f64747;
+        }
+
         &:hover,
         &:focus {
             > a {
+                background: #e42727; /* Old browsers */
+                /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2U0MjcyNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjMDE3MjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                background: -moz-linear-gradient(top,  #e42727 1%, #c01722 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e42727), color-stop(100%,#c01722)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #e42727 1%,#c01722 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #e42727 1%,#c01722 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #e42727 1%,#c01722 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #e42727 1%,#c01722 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42727', endColorstr='#c01722',GradientType=0 ); /* IE6-8 */
                 color: @hover;
                 text-shadow: 1px 1px 17px #f64747, 1px 1px 20px #f64747, 1px 1px 22px #f64747;
             }
@@ -515,7 +558,7 @@ textarea {
             .sub {
                 .rotateX(0);
                 .rotateY(0);
-                top:81px;
+                top:80px;
             }
         }
     }
@@ -529,6 +572,9 @@ textarea {
     position: relative;
 }
 
+.main-block {
+    width:990px;
+}
 /* ----------------------
    #share
 ---------------------- */
@@ -560,9 +606,45 @@ textarea {
 }
 
 /* ----------------------
+   tools
+---------------------- */
+.tools {
+    background: rgba(0,0,0,.5);
+    bottom:0;
+    font-size: 20px;
+    height: 0;
+    left:12px;
+    line-height: 120%;
+    overflow: hidden;
+    padding: 2px 5px;
+    position: absolute;
+
+    > div {
+        float: left;
+        margin:0 5px;
+    }
+
+    .stars {
+        color: #ffc600;
+        letter-spacing: 1px
+    }
+
+    .favorite {
+        color: #b6b6b6;
+        cursor: pointer;
+        margin: 0 8px;
+
+        &.on,
+        &:hover,
+        &:focus {
+            color: #a80f30;
+        }
+    }
+}
+
+/* ----------------------
    #slider
 ---------------------- */
-
 .slider {
     background: #464646;
     margin-bottom:20px;
@@ -623,6 +705,11 @@ textarea {
     }
 
     &.models {
+        .tools {
+            bottom:83px;
+            left:0;
+        }
+
         li {
         }
 
@@ -646,15 +733,17 @@ aside {
 
     .append-gallery {
         background: url(../img/pattern.png) repeat 0 0 #c01722;
+        .bshadow(3px, 2px, 10px, #000);
         height: 0;
         height: 305px;
-        left: 236px;
+        left: 247px;
         .op(0,0);
         overflow: hidden;
         padding-left: 22px;
         position: absolute;
         top: 0;
         width: 0;
+        z-index: 20;
 
         li {
             // margin: 0;
@@ -668,7 +757,36 @@ aside {
     
 }
 
+/* ----------------------
+   Models Grid
+---------------------- */
+.models-grid {
+    li {
+        margin-left:1%;
 
+        img {
+            max-width: 100%;
+            width: 100%
+        }
+
+        &:first-child {
+            margin-left:1%;
+        }
+    }
+
+    &.m3 {
+        li {
+            width: 30.968%
+        }
+    }
+
+    &.m2 {
+        li {
+            margin-left: 1.7%;
+            width: 45.968%
+        }
+    }
+}
 /* ==========================================================================
    Plugins
 ========================================================================== */
