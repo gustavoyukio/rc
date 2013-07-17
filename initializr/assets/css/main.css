@@ -322,6 +322,12 @@ body {
   font-size: 12px;
   padding-top: 68px;
 }
+ul.reset,
+ol.reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 dl dt {
   position: relative;
 }
@@ -420,15 +426,20 @@ input[type="submit"].icon-search:focus {
    #form
 ---------------------- */
 
+form {
+  width: 100%;
+}
 input,
-input[type="search"] {
+input[type="search"],
+textarea {
   background-color: none;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #424242;
 }
 input:focus,
-input[type="search"]:focus {
+input[type="search"]:focus,
+textarea:focus {
   border-bottom-color: #b8b8b8;
 }
 input[type="submit"],
@@ -667,7 +678,6 @@ textarea {
   bottom: 0;
   font-size: 20px;
   height: 0;
-  left: 12px;
   line-height: 120%;
   overflow: hidden;
   padding: 2px 5px;
@@ -690,6 +700,9 @@ textarea {
 .tools .favorite:hover,
 .tools .favorite:focus {
   color: #a80f30;
+}
+dl:hover .tools {
+  height: 28px;
 }
 /* ----------------------
    #slider
@@ -766,6 +779,9 @@ aside {
 aside dl {
   position: relative;
 }
+aside .tools {
+  left: 12px;
+}
 aside .append-gallery {
   background: url(../img/pattern.png) repeat 0 0 #c01722;
   box-shadow: 3px 2px 10px black;
@@ -796,6 +812,9 @@ aside .append-gallery.on {
    Models Grid
 ---------------------- */
 
+.models-grid .tools {
+  width: 100%;
+}
 .models-grid li {
   margin-left: 1%;
 }
@@ -812,6 +831,31 @@ aside .append-gallery.on {
 .models-grid.m2 li {
   margin-left: 1.7%;
   width: 45.968%;
+}
+/* ----------------------
+   'Footer'
+---------------------- */
+
+footer {
+  color: #4f4e4e;
+}
+footer a {
+  text-decoration: none;
+}
+footer ol li,
+footer ul li {
+  margin: 5px 0;
+}
+footer article > h3,
+footer article > h4 {
+  color: #e42727;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+footer article > h3 small,
+footer article > h4 small {
+  font-size: 15px;
+  text-transform: none;
 }
 /* ==========================================================================
    Plugins
