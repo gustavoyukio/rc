@@ -214,6 +214,7 @@ fieldset {
 }
 
 textarea {
+    min-height: 80px;
     resize: vertical;
 }
 
@@ -260,6 +261,12 @@ footer {
     margin-top: -150px; /* negative value of footer height */
     height: 150px;
     clear:both;
+}
+
+// Colors sections
+.gray-texture {
+    background-color: #474747;
+    padding:25px 0;
 }
 
 /* ==========================================================================
@@ -374,7 +381,7 @@ input[type="submit"].sprite {
 
 .sprite { background: url("../img/sprite-icons.png") no-repeat 0 0 }
 .sprite .icon-fav{ background-position: 0 0; width: 16px; height: 14px; } 
-.sprite .icon-login{ background-position: 0 -64px; width: 10px; height: 15px; } 
+.sprite .icon-login,.sprite.icon-login{ background-position: 0 -64px; width: 10px; height: 15px; } 
 .sprite .icon-marker{ background-position: 0 -129px; width: 15px; height: 18px; } 
 .sprite .icon-message{ background-position: 0 -197px; width: 21px; height: 24px; } 
 .sprite .icon-news{ background-position: 0 -271px; width: 33px; height: 21px; } 
@@ -393,7 +400,7 @@ input[type="submit"].icon-search:focus { background-position: 0 -572px; width: 1
 
 
 /* ----------------------
-   #form
+   $form
 ---------------------- */
 form {
     width: 100%
@@ -406,6 +413,7 @@ textarea {
     background-color: transparent;
     border:none;
     border-bottom:1px solid #424242;
+    padding:2px 3px;
 
     &:focus {
         border-bottom-color: #b8b8b8;
@@ -420,6 +428,17 @@ button {
 
 textarea {
     border:1px solid #424242;
+}
+
+// Search
+#s {
+    margin: 5px 3%;
+}
+
+#s .t {
+    font-size: 16px;
+    font-style: italic;
+    padding: 10px 5px 2px;
 }
 
 /* ----------------------
@@ -778,6 +797,19 @@ aside {
 }
 
 /* ----------------------
+   login
+---------------------- */
+.box-login {
+    > a {
+        display: block;
+        margin: 20px 3%;
+        padding: 10px;
+        text-transform: uppercase;
+        width: 77px;
+    }
+}
+
+/* ----------------------
    Models Grid
 ---------------------- */
 .models-grid {
@@ -818,12 +850,19 @@ aside {
 footer {
     color:#4f4e4e;
 
+    .wrap {
+        padding:20px 0;
+    }
+
     a {
         text-decoration: none
     }
 
     ol,
     ul {
+        margin:0;
+        padding:0;
+
         li {
             margin:5px 0;
         }
@@ -841,6 +880,19 @@ footer {
                 text-transform: none;
             }
         }
+    }
+}
+
+#contact {
+    input,
+    textarea {
+        width:95%;
+    }
+
+    input[type="submit"] {
+        border:1px solid #ccc;
+        padding:3px 8px;
+        width:auto;
     }
 }
 

@@ -90,7 +90,7 @@
                             <legend class="ou">Pesquisar</legend>
                             
                             <p>
-                                <input type="text" name="s">
+                                <input type="text" name="s" class="t">
                                 <input type="submit" class="icon-search sprite">
                             </p>
                         </fieldset>
@@ -98,8 +98,8 @@
                 </div>
                 
                 <!-- Append -->
-                <div id="menu" class="right">
-                    <a href="#login">Login <i class="icon-login"></i></a>
+                <div id="menu" class="box-login right">
+                    <a href="#login" data-open="login"><span class="left">Login</span> <i class="right sprite icon-login"></i></a>
 
                     <section id="login" class="ou">
                         <header>
@@ -160,7 +160,7 @@
                 </article>
             </section>
 
-            <section>
+            <section class="gray-texture">
                 <!-- Slider -->
                 <article class="slider models full" data-fx="crossfade" data-time="8000">
                     <!-- title -->
@@ -675,7 +675,7 @@
         
         <!-- Footer -->
         <footer>
-            <section class="wrap">
+            <section class="wrap fix">
                 <article class="c4">
                     <h4>Links</h4>
 
@@ -701,12 +701,12 @@
                 <article class="c4">
                     <h4>Fale Conosco</h4>
 
-                    <form action="">
+                    <form id="contact" action="">
                         <fieldset>
                             <ul class="reset">
                                 <li><input placeholder="Nome" type="text"></li>
                                 <li><input placeholder="Email" type="text"></li>
-                                <li><textarea class="Mensagem"></textarea></li>
+                                <li><textarea placeholder="Mensagem" class="Mensagem"></textarea></li>
                                 <li><input type="submit" value="Enviar"></li>
                             </ul>
                         </fieldset>

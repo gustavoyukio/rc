@@ -140,6 +140,7 @@ fieldset {
   padding: 0;
 }
 textarea {
+  min-height: 80px;
   resize: vertical;
 }
 .chromeframe {
@@ -186,6 +187,10 @@ footer {
   /* negative value of footer height */
   height: 150px;
   clear: both;
+}
+.gray-texture {
+  background-color: #474747;
+  padding: 25px 0;
 }
 /* ==========================================================================
 /* $Grids 
@@ -354,7 +359,8 @@ input[type="submit"].sprite {
   width: 16px;
   height: 14px;
 }
-.sprite .icon-login {
+.sprite .icon-login,
+.sprite.icon-login {
   background-position: 0 -64px;
   width: 10px;
   height: 15px;
@@ -423,7 +429,7 @@ input[type="submit"].icon-search:focus {
   height: 45px;
 }
 /* ----------------------
-   #form
+   $form
 ---------------------- */
 
 form {
@@ -436,6 +442,7 @@ textarea {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #424242;
+  padding: 2px 3px;
 }
 input:focus,
 input[type="search"]:focus,
@@ -449,6 +456,14 @@ button {
 }
 textarea {
   border: 1px solid #424242;
+}
+#s {
+  margin: 5px 3%;
+}
+#s .t {
+  font-size: 16px;
+  font-style: italic;
+  padding: 10px 5px 2px;
 }
 /* ----------------------
    #top
@@ -809,6 +824,17 @@ aside .append-gallery.on {
   width: 778px;
 }
 /* ----------------------
+   login
+---------------------- */
+
+.box-login > a {
+  display: block;
+  margin: 20px 3%;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 77px;
+}
+/* ----------------------
    Models Grid
 ---------------------- */
 
@@ -839,8 +865,16 @@ aside .append-gallery.on {
 footer {
   color: #4f4e4e;
 }
+footer .wrap {
+  padding: 20px 0;
+}
 footer a {
   text-decoration: none;
+}
+footer ol,
+footer ul {
+  margin: 0;
+  padding: 0;
 }
 footer ol li,
 footer ul li {
@@ -856,6 +890,15 @@ footer article > h3 small,
 footer article > h4 small {
   font-size: 15px;
   text-transform: none;
+}
+#contact input,
+#contact textarea {
+  width: 95%;
+}
+#contact input[type="submit"] {
+  border: 1px solid #cccccc;
+  padding: 3px 8px;
+  width: auto;
 }
 /* ==========================================================================
    Plugins
