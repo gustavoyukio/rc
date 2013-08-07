@@ -3,9 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>$RC</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <!-- OG -->
+    <meta property="og:site_name" content="$RC"/>
+    <meta property="og:type" content="site"/>
+    <meta property="og:url" content=""/> <!-- url absoluta -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content="http://davidwalsh.name/wp-content/themes/klass/img/facebooklogo.png"/> <!-- url absoluta -->
 
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -16,6 +23,47 @@
 </head>
 
 <body>
+    <section id="login">
+        <div class="wrap">
+            <header>
+                <h3><i class="icon-login"></i> Login</h3>
+            </header>
+
+            <article>
+                <div class="left">
+                    <form action="">
+                        <fieldset>
+                            <!-- <legend>Login</legend> -->
+
+                            <p>
+                                <label for="">Nome</label>
+                                <input type="text" placeholder="username or email">
+                            </p>
+
+                            <p>
+                                <label for="">Senha</label>
+                                <input type="text" placeholder="password">
+                            </p>
+
+                            <p>
+                                <input type="submit">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="right">
+                    <!-- Login with FACEBOOK -->
+
+                    <!-- Banner -->
+                    <div class="banner">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
     <div class="wrapper">
         <!--[if lt IE 8]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -99,46 +147,7 @@
                 
                 <!-- Append -->
                 <div id="menu" class="box-login right">
-                    <a href="#login" data-open="login"><span class="left">Login</span> <i class="right sprite icon-login"></i></a>
-
-                    <section id="login" class="ou">
-                        <header>
-                            <h3><i class="icon-login"></i> Login</h3>
-                        </header>
-
-                        <article>
-                            <div class="left">
-                                <form action="">
-                                    <fieldset>
-                                        <legend>Login</legend>
-
-                                        <p>
-                                            <label for="">Nome</label>
-                                            <input type="text" placeholder="username or email">
-                                        </p>
-
-                                        <p>
-                                            <label for="">Senha</label>
-                                            <input type="text" placeholder="password">
-                                        </p>
-
-                                        <p>
-                                            <input type="submit">
-                                        </p>
-                                    </fieldset>
-                                </form>
-                            </div>
-
-                            <div class="right">
-                                <!-- Login with FACEBOOK -->
-
-                                <!-- Banner -->
-                                <div class="banner">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                        </article>
-                    </section>
+                    <a href="#login" class="open-modal" data-open="login"><span class="left">Login</span> <i class="right sprite icon-login"></i></a>
                 </div>
             <!--  -->
             </div>
